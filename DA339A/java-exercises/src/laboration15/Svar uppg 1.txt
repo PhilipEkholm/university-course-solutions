@@ -1,0 +1,20 @@
+1. employees refererar till WageEmployee objektet, fast som en endimensionell array. 
+3 st WageEmployee objekt kan lagras i denna. Vid rad 6 har elementen värdena null från början.
+
+2. Första positionen i vår array blir tilldelad ett objekt av typen FullTime, som är ärvd från WageEmployee. 
+FullTime objektets konstruktor får vissa bestämda värden.
+
+3. Andra positionen i vår array blir tilldelad ett objekt av typen Commission, som också ärver från WageEmployee.
+
+4. På rad 9 så sätter man en referensvariabel lika med innehållet av första positionen i employees. 
+För att detta ska fungera så finns en implicit typkonvertering (Commission). 
+På rad 10 så sätts en ny sales till objektet som är lagrat där.
+
+5. På tredje positionen i vår array tilldelas ett objekt av typen Hours (timlön). 
+Detta sker genom att kalla på konstruktorn och mata in vissa värden. 
+Detta fungerar då Hours (precis som tidigare klasser) ärver från WageEmployee. 
+
+6. På rad 12 så tar vi vårt nya objekt som skapades på rad 11, och anropar en metod setHours, som sätter nytt antal timmar på objektet. 
+För att göra detta typkonverterar vi så vi kommer åt den korrekt.
+
+7. For-loopen itererar igenom alla våra objekt som ligger i employees, och skriver ut dem alla på skärmen.  
